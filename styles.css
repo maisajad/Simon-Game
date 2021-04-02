@@ -76,3 +76,116 @@ footer{
 
   width: 200px;
 }
+
+.startagain{
+  width: 400px;
+  display: inline;
+}
+
+.start{
+  width:400px;
+  display: inline;
+}
+
+.top{
+  align:center;
+
+}
+
+
+
+@media (max-width:900px){
+  body {
+    text-align: center;
+    background-color: #6c5b7c;
+  }
+  footer{
+    color: #FEF2BF;
+    font-family:monospace;
+    font-size: 2.5rem;
+    margin: 3%;
+  }
+  #level-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 5rem;
+    margin:  7%;
+    color: #FEF2BF;
+  }
+
+  .container {
+    display: block;
+    width: 80%;
+    margin: auto;
+
+  }
+
+  .btn {
+    margin: 25px;
+    display: inline-block;
+    height: 400px;
+    width: 400px;
+    border: 20px solid black;
+    border-radius: 20%;
+  }
+
+  .game-over {
+    background-color: #af2d2d;
+    opacity: 0.8;
+  }
+
+  .brown {
+    background-color: #897853;
+
+  }
+
+  .pink {
+    background-color: #ffaaa5;
+
+  }
+
+  .blue {
+    background-color: #a8e6cf;
+
+  }
+
+  .yellow {
+    background-color: #fdffab;
+
+  }
+
+  .pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+  }
+
+  .gif1{
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    width: 150px;
+
+  }
+
+  .gif2{
+    position: absolute;
+    top: 80%;
+    left: 5%;
+
+    width: 150px;
+  }
+
+  .startagain{
+    width: 600px;
+    display: inline;
+  }
+
+  .start{
+    width:600px;
+    display: inline;
+  }
+
+  .top{
+    align:center;
+
+  }
+}
