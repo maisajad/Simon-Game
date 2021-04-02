@@ -7,7 +7,7 @@ var level = 0;
 $(".start").click(function() {
   if (!isStarted) {
     $("#level-title").text("Level " + level);
-    $(".start").attr("src","");
+    $(".start").replaceWith("<p class='start'></p>")
     nextSequence();
     isStarted = true;
   }
@@ -71,7 +71,15 @@ function checkAnswer(currentLevel) {
       function(){$("body").removeClass("game-over")},800
     );
     $("#level-title").text("Game Over 😔");
-    $(".start").attr("src","images/playagain.png");
+    $(".start").replaceWith("<img src='images/playagain.png' class='start'>");
+    $(".start").click(function() {
+      if (!isStarted) {
+        $("#level-title").text("Level " + level);
+        $(".start").replaceWith("<p class='start'></p>")
+        nextSequence();
+        isStarted = true;
+      }
+    });
     startOver();
   }
 }
